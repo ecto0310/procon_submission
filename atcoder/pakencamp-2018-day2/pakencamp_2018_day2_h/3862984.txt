@@ -1,0 +1,8 @@
+// Date: Mon, 24 Dec 2018 07:42:43 +0000
+// Language: Text (cat)
+1 7 DDDLLLLLLURRRUURRR
+-1 -1 -1
+-1 -1 -1
+-1 -1 -1
+-1 -1 -1
+-1 -1 -1
