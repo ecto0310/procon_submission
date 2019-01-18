@@ -1,0 +1,22 @@
+// Date: Fri, 18 Jan 2019 13:28:15 +0000
+// Language: C++14 (GCC 5.4.1)
+#include <bits/stdc++.h>
+#include <assert.h>
+
+using namespace std;
+
+int main()
+{
+  int N;
+  cin >> N;
+  vector<int> a(N * 3);
+  for (int i = 0; i < N * 3; i++)
+    cin >> a[i];
+  sort(a.begin(), a.end(), greater<int>());
+  long long ans = 0;
+  for (int i = 0; i < N; i++)
+    ans += a[i * 2 + 1];
+  cout << ans << endl;
+
+  return 0;
+}
