@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git config --global user.name "ecto0310"
-git config --global user.email "me+github@ecto0310.com"
+git config --global user.email "48977990+ecto0310@users.noreply.github.com"
 git remote set-url origin https://ecto0310:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
 
 atcoder_username="ecto0310"
