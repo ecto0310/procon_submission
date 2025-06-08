@@ -1,0 +1,24 @@
+name: Crawler
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+jobs:
+  crawler:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install package
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install dos2unix libxml2-utils
+
+      - name: Clone code
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        run: |
+          ./crawler.sh
